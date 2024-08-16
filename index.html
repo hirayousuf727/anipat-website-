@@ -1,0 +1,715 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anipat Website</title>
+    <link rel="icon" href="logo.webp">
+    <style>
+        body{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: sans-serif;
+     overflow-x: hidden;
+}
+header{
+     color: white;
+     background-color: #1C1818;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     padding-left: 3%;
+}
+.List-1{
+     display: flex;
+     list-style: none;
+}
+.List-1>a>li{
+     margin-right: 100px;
+}
+.List-1>a{
+     color: white;
+     text-decoration: none;
+     font-weight: 400;
+     font-size: 16px;
+}
+.List-2{
+     display: flex;
+     list-style: none;
+     justify-content: end;
+     align-items: center;
+     float: right;
+     margin-left: 90%;
+     margin-top: -3%;
+     box-sizing: border-box;
+     padding: 0;
+}
+.List-2>div{
+     margin-left: -40%;
+}
+.List-2>div>a>li>svg{
+     fill: grey;
+}
+.List-2-1>svg{
+     width: 15% !important;
+     height: 15% !important;
+}
+.List-2-2>svg{
+     width: 17% !important;
+     height: 17% !important;
+}
+.List-2-3>svg{
+     width: 30% !important;
+     height: 30% !important;
+
+}
+.List-2-4>svg{
+     width: 22% !important;
+     height: 22% !important;
+}
+.Div-1{
+     padding: 3% 5%;
+     box-sizing: border-box;
+     width: 100%;
+     background-color: white;
+     vertical-align: middle;
+     align-items: center;
+     align-self: center;
+     justify-content: center;
+     justify-items: center;
+     justify-self: center;
+}
+.Icon-Image{
+     margin-top: -4%;
+}
+.Div-1>ul{
+     display: flex;
+     list-style: none;
+     float: right;
+     margin-right: 5%;
+     margin-top: -1%;
+}
+.Div-1>ul>li{
+     margin-left: 5%;
+     cursor: pointer;
+}
+.Div-1>ul>li:hover{
+     color: #ef3b0e;
+}
+.Div-1>ul>li>select{
+     cursor: pointer;
+     border: none;
+}
+.Div-1>ul>li>select:hover{
+     color: #ef3b0e;
+}
+.Div-1>ul>li>select>option{
+     cursor: pointer;
+}
+.Div-1>ul>li>select>option:hover{
+     color: #ef3b0e;
+}
+.Dog-Div{
+     background-image: url(back2.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: 100% 70%;
+     padding-left: 7%;
+     padding-top: 15%;
+     margin-top: -13%;
+     padding-bottom: 0;
+}
+
+.Dog-Div-1>.Dog-Div-1-Para-1{
+     color: white;
+     font-size: 75px;
+     font-family: Arial, Helvetica, sans-serif;
+}
+.Dog-Div-1>.Dog-Div-1-Para-1>span{
+     font-weight: 800;
+     font-family: Arial, Helvetica, sans-serif;
+}
+.Dog-Div-1-Para-2{
+     margin-top: -5%;
+     color: white;
+     width: 30%;
+     line-height: 32px;
+}
+.Dog-Div-1>button{
+     color: #ff3500;
+     background-color: white;
+     border: 1px solid transparent;
+     padding: 17px 50px;
+     border-radius: 30px;
+     font-size: 16px;
+     font-weight: 500;
+     cursor: pointer;
+}
+.Dog-Div-1>button:hover{
+     background-color: #ef3b0e;
+     color: white;
+}
+.Dog-Div-2{
+     margin-top: -22%;
+     margin-left: 19%;
+}
+.Services{
+     font-size: 50px;
+     font-weight: 700;
+     text-align: center;
+}
+.Service-Para{
+     color: grey;
+     text-align: center;
+     margin-top: -2%;
+}
+.Main-3-Divs{
+     margin-top: 5%;
+     display: flex;
+     justify-content: center;
+}
+.Main-1-Div{
+     text-align: center;
+     width: 20%;
+     border: 1px solid #ef3b0e;
+     border-radius: 5px;
+     padding: 3%;
+     cursor: pointer;
+}
+.Main-1-Div:hover{
+     background-color: white;
+     border: none;
+     box-shadow: 0 0 6px black;
+}
+.Main-1-Div>span{
+     font-size: 25px;
+     font-weight: 600;
+}
+.Main-1-Div>p{
+     color: grey;
+     line-height: 30px;
+}
+.Main-2-Div{
+     text-align: center;
+     width: 20%;
+     border: 1px solid #ef3b0e;
+     border-radius: 5px;
+     padding: 3%;
+     margin-left: 5%;
+     cursor: pointer;
+}
+.Main-2-Div:hover{
+     background-color: white;
+     border: none;
+     box-shadow: 0 0 6px black;
+}
+.Main-2-Div>span{
+     font-size: 25px;
+     font-weight: 600;
+}
+.Main-2-Div>p{
+     color: grey;
+     line-height: 30px;
+}
+.Main-3-Div{
+     text-align: center;
+     width: 20%;
+     border: 1px solid #ef3b0e;
+     border-radius: 5px;
+     padding: 3%;
+     margin-left: 5%;
+     cursor: pointer;
+}
+.Main-3-Div:hover{
+     background-color: white;
+     border: none;
+     box-shadow: 0 0 6px black;
+}
+.Main-3-Div>span{
+     font-size: 25px;
+     font-weight: 600;
+}
+.Main-3-Div>p{
+     color: grey;
+     line-height: 30px;
+}
+.Cat-Div{
+     margin-top: 10%;
+     margin-left: 3%;
+     display: flex;
+}
+.Cat-Div-2{
+     margin-top: 6%;
+     width: 35%;
+     margin-left: 8%;
+}
+.Para-1{
+     font-size: 50px;
+}
+.Para-1>span{
+     font-weight: 700;
+}
+.Para-2{
+     color: grey;
+     line-height: 30px;
+}
+.Cat-Div-2>button{
+     color: white;
+     background-color: #ef3b0e;
+     cursor: pointer;
+     border: none;
+     font-size: 18px;
+     font-weight: 500;
+     padding: 17px 55px;
+     margin-top: 10%;
+     border-radius: 30px;
+}
+.Adopting-Div{
+     display: flex;
+     margin-left: 7%;
+     margin-right: 7%;
+     margin-top: 3%;
+}
+.Adopting-Div-1-Para-1{
+     font-size: 50px;
+     color: #191D34;
+}
+.Adopting-Div-1-Para-1>span{
+     font-weight: 700;
+}
+.Adopting-Div-1-Para-2{
+     color: grey;
+     line-height: 30px;
+}
+.Adopting-Div-1>button{
+     color: white;
+     background-color: #ef3b0e;
+     cursor: pointer;
+     border: none;
+     font-size: 18px;
+     font-weight: 500;
+     padding: 17px 55px;
+     margin-top: 10%;
+     border-radius: 30px;
+}
+.John-Walker{
+     margin-top: 15%;
+     background-color: white;
+     border-radius: 10px;
+     box-shadow: 0 0 10px grey;
+     width: 55%;
+     padding: 3%;
+     margin-left: 18%;
+     margin-right: 20%;  
+}
+.JW-Para1{
+     color: gray;
+}
+.JW-Para2{
+     color: rgb(88, 85, 85);
+}
+.John-Text{
+     margin-top: -22%;
+     margin-left: 20%;
+}
+.Team{
+     text-align: center;
+     margin-top: 15%;
+     width: 42%;
+     margin-left: 27%;
+     margin-right: 27%;
+}
+.Team-Para1{
+     color: #191D34;
+     font-size: 50px;
+     font-weight: 700;
+}
+.Team-Para2{
+     color: grey;
+     margin-top: -7%;
+     line-height: 25px;
+}
+.Team-Images{
+     margin-top: 10%;
+     align-items: center;
+     text-align: center;
+}
+.Cat-orange{
+     background-image: url(back.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     text-align: center;
+     color: white;
+     padding-top: 3%;
+     padding-bottom: 3%;
+     margin-top: 15%;
+}
+.COP1{
+     font-size: 50px;
+     font-weight: 900;
+}
+.COP2{
+     font-size: 25px;
+}
+.Cat-orange>button{
+     color: #ef3b0e;
+     background-color: white;
+     cursor: pointer;
+     border: none;
+     font-size: 18px;
+     font-weight: 500;
+     padding: 25px 55px;
+     margin-top: 4%;
+     border-radius: 35px;
+}
+.Cat-orange>span{
+     margin-left: 3%;
+}
+.Cat-orange>span>a{
+     color: white;
+     text-decoration: none;
+     margin-left: 2%;
+}
+.Cat-orange>span>a:hover{
+     text-decoration: underline;
+}
+footer{
+     background-color: #F8F8F8;
+     color: grey;
+     padding: 3%;
+     padding-left: 6%;
+
+}
+footer>div{
+     display: inline-block;
+}
+footer>div>ul{
+     list-style: none;
+     margin-left: -20%;
+}
+.FD2{
+     margin-left: 7%;
+}
+.FD3{
+     margin-left: 7%;
+}
+.FD4{
+     margin-left: 7%;
+}
+footer>div>ul>li{
+     cursor: pointer;
+}
+
+footer>div>ul>li>a{
+     color: gray;
+     text-decoration: none;
+     font-size: 20px;
+}
+footer>div>ul>li:hover{
+     color: #ef3b0e;
+}
+footer>div>ul>li>a:hover{
+     color: #ef3b0e;
+}
+.FOOT-DIV>li{
+     margin-left: 1%;
+}
+footer>div>svg{
+     fill: grey;
+     width: 2%;
+     height: 2%;
+}
+.footer-icons-1{
+     width: 10px;
+     cursor: pointer;
+}
+.footer-icons-2{
+     width: 15px;
+     margin-left: 1%;
+     cursor: pointer;
+}
+.footer-icons-3{
+     width: 25px;
+     margin-left: 1%;
+     cursor: pointer;
+}
+.footer-icons-4{
+     width: 20px;
+     margin-left: 1%;
+     cursor: pointer;
+}
+.footer-icons-1:hover{
+     fill: #ef3b0e;
+}
+.footer-icons-2:hover{
+     fill: #ef3b0e;
+}
+.footer-icons-3:hover{
+     fill: #ef3b0e;
+}
+.footer-icons-4:hover{
+     fill: #ef3b0e;
+}
+.Example-div{
+     margin-left: 30%;
+     margin-top: -40%;
+}
+.Example-div-1{
+     background-color: #fff;
+     border-radius: 8px;
+     box-shadow: 0 0 8px grey;
+     text-align: center;
+     padding: 3%;
+     padding-left: 6%;
+     padding-right: 6%;
+     width: fit-content;
+     margin-left: 60%;
+}
+.Example-div-2{
+     background-color: #fff;
+     border-radius: 8px;
+     box-shadow: 0 0 8px grey;
+     text-align: center;
+     padding: 3%;
+     padding-left: 6%;
+     padding-right: 6%;
+     width: fit-content;
+     margin-left: 35%;
+}
+.Example-div-3{
+     background-color: #fff;
+     border-radius: 8px;
+     box-shadow: 0 0 8px grey;
+     text-align: center;
+     padding: 3%;
+     padding-left: 6%;
+     padding-right: 6%;
+     width: fit-content;
+     margin-left: 60%;
+}
+.ES1{
+     color: #191D34;
+     font-size: 50px;
+     font-weight: 700;
+}
+.ES2{
+     color: grey;
+}
+.intro1{
+    background-color: orange;
+    color: orangered;
+    height: 60px;
+    text-align: center;
+}
+.intro1:hover{
+    box-shadow: 0px 20px 20px orange, 0px 20px 20px green;
+}
+    </style>
+
+  </head>
+  <body id="top">
+
+    <header>
+      <div>
+        <ul class="List-1">
+          <a href="tel: +923117865772">
+            <li>+92 3117865772</li>
+          </a>
+          <a href="#">
+            <li>Mon - Sat 10:00 - 7:00</li>
+          </a>
+        </ul>
+        <ul class="List-2">
+          <div>
+            <a href="https://www.facebook.com/" target="_blank">
+              <li class="List-2-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                  <path
+                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                  />
+                </svg>
+              </li>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.pinterest.com/" target="_blank">
+              <li class="List-2-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <path
+                    d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"
+                  />
+                </svg>
+              </li>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.google.com/" target="_blank">
+              <li class="List-2-3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                  <path
+                    d="M386.1 228.5c1.8 9.7 3.1 19.4 3.1 32C389.2 370.2 315.6 448 204.8 448c-106.1 0-192-85.9-192-192s85.9-192 192-192c51.9 0 95.1 18.9 128.6 50.3l-52.1 50c-14.1-13.6-39-29.6-76.5-29.6-65.5 0-118.9 54.2-118.9 121.3 0 67.1 53.4 121.3 118.9 121.3 76 0 104.5-54.7 109-82.8H204.8v-66h181.3zm185.4 6.4V179.2h-56v55.7h-55.7v56h55.7v55.7h56v-55.7H627.2v-56h-55.7z"
+                  />
+                </svg>
+              </li>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/feed/ " target="_blank">
+              <li class="List-2-4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                  />
+                </svg>
+              </li>
+            </a>
+          </div>
+        </ul>
+      </div>
+    </header>
+    <div class="Div-1">
+      <a href="#"><img src="logo (1).webp" alt="" class="Icon-Image"></a>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>
+          <select name="" id="">
+            <option value="">Blog</option>
+            <option value="">Single-Blog</option>
+          </select>
+        </li>
+        <li>
+          <select name="Pages" id="">
+            <option value="" selected disabled>Pages</option>
+            <option value="">Element</option>
+          </select>
+        </li>
+        <li>Services</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="Dog-Div">
+      <div class="Dog-Div-1">
+        <p class="Dog-Div-1-Para-1">
+          We Care <br />
+          <span>Your Pets</span>
+        </p>
+        <p class="Dog-Div-1-Para-2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod.
+        </p>
+        <button>Contact us</button>
+      </div>
+      <div class="Dog-Div-2">
+        <img
+          src="dog.webp"
+          alt=""
+          style="margin-top: -18%"
+        />
+      </div>
+    </div>
+    <div>
+      <h3 class="Services">Services for every dog</h3>
+      <p class="Service-Para">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor <br />incididunt ut labore et dolore magna.
+      </p>
+    </div>
+    <div class="Main-3-Divs">
+      <div class="Main-1-Div">
+        <div>
+          <img src="ani.webp" alt="" style="position: absolute; margin-top: 3%; margin-left: 3%;">
+          <img src="tri.png" alt=""><br><br>
+        </div>
+        <span>Pet Boarding</span><br><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+      </div>
+      <div class="Main-2-Div">
+        <img src="dog1.webp" alt="" style="position: absolute; margin-top: 3%; margin-left: 3%;">
+        <img src="tri.png" alt=""><br><br>
+        <span>Healthy Meals</span><br><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+      </div>
+      <div class="Main-3-Div">
+        <img src="dog2.webp" alt="" style="position: absolute; margin-top: 3%; margin-left: 3%;">
+        <img src="tri.png" alt=""><br><br>
+        <span>Pet Spa</span><br><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+      </div>
+    </div>
+    <div class="Cat-Div">
+    <div class="Cat-Div-1"><img src="cat.webp" alt=""></div>
+    <div class="Cat-Div-2"><p class="Para-1">We care your pet <span>As you care</span></p> <p class="Para-2">Lorem ipsum dolor sit , consectetur adipiscing elit, sed do iusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.</p><button>About Us</button></div>
+    </div>
+    <div class="Adopting-Div">
+      <div class="Adopting-Div-1"><p class="Adopting-Div-1-Para-1">We need your <br><span>help Adopt Us</span></p><p class="Adopting-Div-1ara-2">Lorem ipsum dolor sit , consectetur adipiscing elit, sed do <br>iusmod tempor incididunt ut labore et dolore magna <br>aliqua. Quis ipsum suspendisse ultrices.</p> <button>Contact Us</button></div>
+      </div>
+      <div class="Example-div">
+        <div class="Example-div-1"><img src="dog trace1.webp" alt=""><br><br><span class="ES1">52+</span><br><span class="ES2">Pets Available</span></div>
+        <div class="Example-div-2 ex2"><img src="dog tr.webp" alt=""><br><br><span class="ES1">452</span><br><span class="ES2">Pets Available</span></div>
+        <div class="Example-div-3"><img src="foot.webp" alt=""><br><br><span class="ES1">52+</span><br><span class="ES2">Pets Available</span></div>
+
+      </div>
+      <div class="John-Walker">
+        <img src="girl.webp" alt="">
+        <div class="John-Text"><h3>Jhon Walker</h3><p class="JW-Para1">Head of Web Design</p><p class="JW-Para2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente eius sequi vel odit, voluptates voluptatem maxime molestiae quasi aperiam aut architecto</p></div>
+      </div>
+      <div class="Team">
+        <p class="Team-Para1">Our Team</p><p class="Team-Para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+      </div>
+      <div class="Team-Images">
+        <img src="girl 2.webp" alt="" style="margin-left: 2%;">
+        <img src="men.webp" alt="" style="margin-left: 2%;">
+        <img src="girl3.webp" alt="" style="margin-left: 2%;">
+        </div>
+        <div>
+
+          <p style="background-color: white; border-radius: 7px; box-shadow: 0 0 7px grey; width: 10%; padding: 2%; display: inline-block; margin-top: -5%; margin-left: 13%; margin-right: 18%;"><span style="font-weight: 600; font-size: 18px;">Rala Emaia</span> <br><br><span style="color: grey;">Senior Director</span></p>
+          <p style="background-color: white; border-radius: 7px; box-shadow: 0 0 7px grey; width: 10%; padding: 2%; display: inline-block; margin-top: -10%; margin-right: 17%;"><span style="font-weight: 600; font-size: 18px;">Jhon Smith</span> <br><br><span style="color: grey;">Senior Director</span></p>
+          <p style="background-color: white; border-radius: 7px; box-shadow: 0 0 7px grey; width: 10%; padding: 2%; display: inline-block; margin-top: -5%;"><span style="font-weight: 600; font-size: 18px;">Rala Emaia</span> <br><br><span style="color: grey;">Senior Director</span></p>
+        </div>
+        <div class="Cat-orange">
+          <p class="COP1">Why go with Anipat?</p>
+          <p class="COP2">Because we know that even the best technology is only as <br>good as the people behind it. 24/7 tech support.</p>
+            <button>Contact Us</button><span>Or <a href="tel: +923117865772">+923117865772</a></span>
+        </div>
+        <footer>
+          <div class="FD1">
+            <p style="color: black; font-size: 25px;">Contact Us</p>
+            <ul>
+              <li><a href="tel: +92 312 2607520">+92 312 2607520</a></li><br>
+              <li><a href="#">@reallygreatsite.gmail.com</a></li><br>
+              <li>700, Green Lane, New York, USA</li><br>
+            </ul>
+          </div>
+          <div class="FD2">
+            <p style="color: black; font-size: 25px;">Our Services</p>
+            <ul class="FOOT-DIV">
+              <li>Pet Insurance</li><br>
+              <li>Pet Surgeries</li><br>
+              <li>Pet Adoption</li><br>
+              <li>Dog Insurance</li><br>
+              <li>Dog Insurance</li><br>
+            </ul>
+          </div>
+          <div class="FD3">
+            <p style="color: black; font-size: 25px;">Quick Link</p>
+            <ul>
+              <li>About Us</li><br>
+              <li>Privacy Policy</li><br>
+              <li>Terms of Service</li><br>
+              <li>Login info</li><br>
+              <li>Knowledge Base</li><br>
+            </ul>
+          </div>
+          <div class="FD4"><img src="logo.webp" alt="">
+          <p>239 E 5th St, New York NY 10003, <br>USA</p>
+      
+        </footer>
+        <div class="intro1">
+            <h1 class="intro2">made by hira yousuf </h1>
+        </div>
+  </body>
+</html>
